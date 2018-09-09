@@ -47,3 +47,6 @@ html = etree.parse('./test.html', etree.HTMLParser())
 result = html.xpath('//a[@href="link3.html"]/../@class')
 print(result)
 
+
+result = html.xpath('//li/a/@href')
+print(result)
